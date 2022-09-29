@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Anchor Decoration */
+a {
+  text-decoration: none;
+}
+
+/* Image Adjust */
+.full-width {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Positions */
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.z-index-100 {
+  z-index: 100;
+}
+
+.z-index-50 {
+  z-index: 50;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.35rem 1rem;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: purple;
+  border: 1px solid purple;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: purple;
+  border: 1px solid purple;
+}
+
+.header-h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: rgb(112, 109, 112);
+}
+
+.tag-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag-box p {
+  background-color: rgb(97, 128, 185);
+  padding: 0.4rem 1.3rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.loader {
+  font-size: 2rem;
+}
+
+.quiz-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.item-box {
+  flex: 0 1 22%;
+  height: 140px;
+  box-shadow: 0px 0px 2px 2px rgb(120, 156, 221);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.4rem;
+  padding: 0.4rem;
+}
+
+.quiz-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  line-height: 1.2;
+  margin: 0.4rem 0;
+}
+
+.quiz-btn {
+  font-size: 1.2rem;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+}
+
+#root {
+  padding-bottom: 3rem;
+}
+
+.level-box {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.4rem 0;
+  margin-right: 1.9rem;
+  align-items: center;
+}
+.level-box h3 {
+  font-size: 1.4rem;
+  margin-left: 0.3rem;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flex-30 select {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  font-weight: 500;
+}
+.flex-30 select option {
+  font-size: 1.2rem;
+}
+
+.quix-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.quiz-item {
+  width: 30%;
+  box-shadow: 0px 0px 2px 2px coral;
+  margin: 0.6rem 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.quiz-item p {
+  font-size: 1.4rem;
+}
+.quiz-item button {
+  font-size: 1.25rem;
+}
+
+.h2 {
+  font-size: 1.5rem;
+}
+
+.back-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.7rem 0;
+}
+.back-btn button {
+  font-size: 1.3rem;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+}
+
+.range {
+  margin-top: 1rem;
+  background-color: rgb(198, 195, 195);
+  border-radius: 5px;
+  width: 100%;
+  height: 10px;
+}
+
+.show-question {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.show-question span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.qs-box {
+  background-color: green;
+  margin-top: 1.9rem;
+  padding: 0.4rem;
+  font-size: 2.25rem;
+  color: rgb(185, 181, 181);
+  border-radius: 8px;
+}
+
+.ans-box {
+  font-size: 1.5rem;
+  border: 2px solid cornflowerblue;
+  width: 94%;
+  margin: 1.2rem;
+  padding: 0.8rem 0rem 0.8rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.next-btn {
+  margin-top: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  width: 93%;
+}
+.next-btn button {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.btn {
+  border: 2px solid coral;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+}
+
+.result-box {
+  box-shadow: 0px 0px 1px 3px rgb(210, 218, 234);
+  z-index: 100;
+  padding: 0.4rem;
+}
+
+.tabel {
+  width: 100%;
+}
+.tabel .first {
+  width: 50%;
+  border: 2px solid cornflowerblue;
+  font-size: 1.34rem;
+  padding: 0.3rem;
+}
+.tabel .second {
+  border: 2px solid cornflowerblue;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 0.3rem;
+}
+.tabel tr th {
+  font-size: 1.5rem;
+  border: 2px solid;
+}
+
+.correct {
+  background-color: green;
+  color: whitesmoke;
+  padding: 0.3rem;
+  display: inline-block;
+}
+
+.incorrect {
+  background-color: coral;
+  color: whitesmoke;
+  padding: 0.3rem;
+  display: inline-block;
+}
+
+.reset-btn {
+  font-size: 1.24rem;
+  margin: 0.7rem 0;
+  padding: 0.3rem 1rem;
+  background-color: teal;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.quiz-level {
+  font-size: 1.3rem;
+}
+
+select {
+  font-size: 1.25rem;
+}/*# sourceMappingURL=style.css.map */
