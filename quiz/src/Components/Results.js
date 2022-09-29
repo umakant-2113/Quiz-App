@@ -17,16 +17,23 @@ class Reasults extends React.Component {
     }
     return (
       <>
-        <Link to='/quiz'>
-          <div className='back-btn'>
-            <button>Back Previous Quiz </button>
+        <div className='reset-quiz-btn'>
+          <div>
+            <button className='reset-btn' onClick={this.props.handlereset}>
+              {' '}
+              Reset
+            </button>
           </div>
-        </Link>
-        <Link to='/'>
           <div className='back-btn'>
-            <button>New Quiz </button>
+            <Link to='/quiz'>
+              <button> Previous Quiz </button>
+            </Link>
+
+            <Link to='/'>
+              <button>New Quiz </button>
+            </Link>
           </div>
-        </Link>
+        </div>
         <div className='result-box'>
           <table className='tabel'>
             <tr>
@@ -56,12 +63,6 @@ class Reasults extends React.Component {
               <th> {this.props.correctAns}</th>
             </tr>
           </table>
-        </div>
-        <div>
-          <button className='reset-btn' onClick={this.props.handlereset}>
-            {' '}
-            Reset
-          </button>
         </div>
       </>
     );

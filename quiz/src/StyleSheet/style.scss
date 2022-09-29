@@ -115,16 +115,16 @@
 .h2 {
   font-size: 1.5rem;
 }
-.back-btn {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0.7rem 0;
-  button {
-    font-size: 1.3rem;
-    padding: 0.3rem 1rem;
-    cursor: pointer;
-  }
-}
+// .back-btn {
+//   display: flex;
+//   justify-content: flex-end;
+//   margin: 0.7rem 0;
+//   button {
+//     font-size: 1.3rem;
+//     padding: 0.3rem 1rem;
+//     cursor: pointer;
+//   }
+// }
 
 .range {
   margin-top: 1rem;
@@ -232,4 +232,18 @@
 }
 select {
   font-size: 1.25rem;
+}
+
+.reset-quiz-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.back-btn {
+  display: flex;
+  flex-direction: column;
+  button {
+    margin: 0.3rem 0;
+    font-size: 1.25rem;
+  }
 }

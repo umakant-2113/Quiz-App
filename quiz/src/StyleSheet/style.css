@@ -247,17 +247,6 @@ a {
   font-size: 1.5rem;
 }
 
-.back-btn {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0.7rem 0;
-}
-.back-btn button {
-  font-size: 1.3rem;
-  padding: 0.3rem 1rem;
-  cursor: pointer;
-}
-
 .range {
   margin-top: 1rem;
   background-color: rgb(198, 195, 195);
@@ -370,5 +359,20 @@ a {
 }
 
 select {
+  font-size: 1.25rem;
+}
+
+.reset-quiz-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  display: flex;
+  flex-direction: column;
+}
+.back-btn button {
+  margin: 0.3rem 0;
   font-size: 1.25rem;
 }/*# sourceMappingURL=style.css.map */
