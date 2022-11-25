@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'global';
+@import 'loader';
 
 // general scss
 
@@ -10,6 +11,7 @@
 }
 
 // tag-style
+
 .tag-box {
   display: flex;
   flex-wrap: wrap;
@@ -95,20 +97,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
+  background-color: rgb(228, 221, 221);
+  padding: 0.8rem;
+  border-radius: 20px;
 }
 .quiz-item {
   width: 30%;
-  box-shadow: 0px 0px 2px 2px coral;
+  box-shadow: 0px 0px 2px 2px cornflowerblue;
   margin: 0.6rem 0;
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  border-radius: 14px;
+  background-color: rgb(224, 224, 224);
+
   p {
     font-size: 1.4rem;
+    color: cornflowerblue;
   }
   button {
     font-size: 1.25rem;
+    border-radius: 8px;
+    padding: 0.3rem 0.6rem;
   }
 }
 
@@ -161,6 +172,10 @@
   cursor: pointer;
   background-color: cornflowerblue;
   color: white;
+}
+
+.ans-box :hover {
+  background-color: greenyellow;
 }
 
 .next-btn {
@@ -239,11 +254,14 @@ select {
   justify-content: space-between;
   align-items: center;
 }
+
 .back-btn {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   button {
     margin: 0.3rem 0;
     font-size: 1.25rem;
+    width: 100px;
   }
 }

@@ -133,9 +133,10 @@ class App extends React.Component {
                     level={this.state.level}
                     categoryId={this.state.categoryId}
                     categoryName={this.state.categoryName}
-                    handledata={this.handledata}
+                    handledata = { this.handledata }
                   />
                 }
+                
               ></Route>
             </Routes>
           </React.Fragment>

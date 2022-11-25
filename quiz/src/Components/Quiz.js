@@ -1,6 +1,6 @@
 import React from 'react';
 import PlayQuiz from './PlayQuiz';
-import { Route, Routes, Router, Link } from 'react-router-dom';
+import { Routes, Router, Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 
 class Quiz extends React.Component {
@@ -20,17 +20,18 @@ class Quiz extends React.Component {
       }
     });
 
-  
     return (
       <>
         <div className='container'>
           <div className='quix-box'>
-            {data?.map((data) => {
+            {data?.map((data, index) => {
               return (
-                <div className='quiz-item'>
+                <div className='quiz-item' key={index}>
                   <p>{data.name} </p>
                   <Link to='/quiz'>
-                    <button onClick={() => this.props.categoryId(data.id,data.name)}>
+                    <button
+                      onClick={() => this.props.categoryId(data.id, data.name)}
+                    >
                       Take A Quiz
                     </button>
                   </Link>

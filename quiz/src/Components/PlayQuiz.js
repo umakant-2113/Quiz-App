@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Results from './Results';
-import { BrowserRouter, Route, Routes, Router } from 'react-router-dom';
+import Loader from './Loader';
+// import { BrowserRouter, Route, Routes, Router } from 'react-router-dom';
 class PlayQuiz extends React.Component {
   constructor(props) {
     super(props);
@@ -104,11 +105,12 @@ class PlayQuiz extends React.Component {
   };
 
   render() {
+    console.log(this.props);
+
     if (this.state.questionData.question === '') {
-      return <h1>Loading........ </h1>;
+      return <Loader />;
     }
 
-    // console.log(this.state.quizData, 'line number 110');
     return (
       <>
         <Link to='/'>
@@ -153,6 +155,7 @@ class PlayQuiz extends React.Component {
               </div>
             );
           })}
+          
         </div>
 
         <div className='next-btn'>
